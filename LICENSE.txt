@@ -1,0 +1,2 @@
+its under GPL license. 
+It is using javascript library which you can found here http://sonicradish.com/labs/jGlideMenu/current/index.html

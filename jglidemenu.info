@@ -1,0 +1,7 @@
+name = jGlideMenu
+description = A module to provide a block which show menu as <a href="http://sonicradish.com/labs/jGlideMenu/current/index.html">jglidemenu </a>
+core = 7.x
+package = other
+files[] = jglidemenu.install
+files[] = jglidemenu.module
+version = "7.x-1.0"
