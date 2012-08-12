@@ -199,7 +199,7 @@ jQuery.jGlideMenu = {
 			// --> Remove Any Place Holder Content From Element and Hide Tiles
 
 			// <-- Create Menu Structure
-			jQuery(jQuery.jGlideMenu.currentElement).append('<div class="jGM_header"><a href="#">'+jQuery.jGlideMenu.closeLinkMarkUp+'</a></div>')
+			jQuery(jQuery.jGlideMenu.currentElement).append('<div class="jGM_header">'+jQuery.jGlideMenu.closeLinkMarkUp+'</a></div>')
 								.append('<div class="jGM_wrapper" id="jGM_wrapper_'+this.id+'"></div>');
 			// --> Create Menu Structure
 		
@@ -366,12 +366,12 @@ jQuery.jGlideMenu = {
 		jQuery('#'+ptr.id).addClass('jGM_tile').css({
 			top		:	0,
 			left		:	off+'px',
-			height		:	jQuery.jGlideMenu.height+'px',
-			width		:	jQuery.jGlideMenu.width+'px',
+			//height		:	jQuery.jGlideMenu.height+'px',
+			//width		:	jQuery.jGlideMenu.width+'px',
 			position	:	'absolute',
 			overflow	:	'hidden',
 			margin		:	0,
-			padding		:	0,
+			padding		:	"15px 20px",
 			border		:	0,
 			display		:	'block'	
 		});
@@ -644,7 +644,8 @@ jQuery.jGlideMenu = {
 
 		var template = new String('');
 		// Header Layout
-		template  = '<div class="jGM_cats"><h1>'+t+'</h1><p class="jGM_desc">'+d+'</p></div>';
+		//<h1>'+t+'</h1>
+		template  = '<div class="jGM_cats"><p class="jGM_desc">'+d+'</p></div>';
 		// Scroll Up
 		template += '<div class="jGM_pager"><a href="#" rel="Up" title="Scroll Up" style="display:none"><img src="'
 				+jQuery.jGlideMenu.imagePath+'arrow_up.gif" alt="Scroll Up"/></a></div>';

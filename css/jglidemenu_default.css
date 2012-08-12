@@ -1,4 +1,4 @@
-jGM_box {
+/*jGM_box {
 position:absolute;
 top:100px;
 left:100px;
@@ -9,21 +9,24 @@ border:1px solid #ccc;
 overflow:hidden;
 margin:0;
 padding:0;
+}*/
+.block-jglidemenu{
+	min-height:250px;
+	overflow: hidden;
 }
-
-.jGM_header {
-position:absolute;
+/*.jGM_header {
+/*position:absolute;
 top:0;
-left:0;
+left:0;*/
 height:18px;
-width:227px;
+//width:227px;
 background:#d1d1d1;
 color:#fff;
 text-align:right;
-vertical-align:middle;
+/*vertical-align:middle;
 line-height:18px;
-//cursor:move;
-}
+*///cursor:move;
+}*/
 
 .jGM_header a {
 margin-right:12px;
@@ -38,10 +41,11 @@ color:#333;
 
 .jGM_wrapper {
 position:absolute;
-top:19px;
-left:0;
-width:227px;
-height:317px;
+//top:19px;
+//left:0;
+//width:227px;
+//height:317px;
+width:100%;
 border:0;
 margin:0;
 padding:0;
@@ -50,23 +54,25 @@ padding:0;
 .jGM_tile {
 position:absolute;
 top:0;
-left:7px;
-width:213px;
-height:auto;
+//left:7px;
+/*width:213px;
+height:auto;*/
 overflow:hidden;
 border:0;
 display:block;
 margin:0;
 padding:0;
+min-height:250px;
+min-width:155px;
 }
 
-.jGM_cats {
+/*.jGM_cats {
 width:100%;
 height:64px;
 overflow:hidden;
 vertical-align:middle;
 text-align:left;
-}
+}*/
 
 .jGM_cats h1 {
 font-family:Bookman Old Style,Verdana,Arial,serif;
@@ -90,7 +96,7 @@ padding:0;
 
 .jGM_pager {
 height:18px;
-width:213px;
+//width:213px;
 line-height:18px;
 border:0;
 background:#f6f6f6;
@@ -118,8 +124,8 @@ margin:6px 0;
 }
 
 .jGM_content {
-width:213px;
-height:150px;
+//width:213px;
+//height:150px;
 border:0;
 overflow:hidden;
 margin:1px 0;
@@ -150,37 +156,19 @@ background-position:203px 50%;
 }
 
 .jGM_back {
-position:absolute;
-top:255px;
+/*position:absolute;
 right:0;
-height:18px;
-width:52px;
-background:#d1d1d1;
-color:#fff;
-line-height:18px;
-vertical-align:middle;
-text-align:center;
-border:0;
-z-index:99;
 margin:10px 0 0;
-padding:0;
+*/
+float: right;
 }
 
 .jGM_reset {
-position:absolute;
-top:255px;
+/*position:absolute;
 right:62px;
-height:18px;
-width:52px;
-background:#d1d1d1;
-color:#fff;
-line-height:18px;
-vertical-align:middle;
-text-align:center;
-border:0;
-z-index:99;
-margin:10px 0 0;
-padding:0;
+margin:10px 0 0;*/
+float: left;
+
 }
 
 .jGM_back a,.jGM_reset a {
@@ -195,4 +183,9 @@ background:#d1d1d1;
 .jGM_back a:HOVER,.jGM_reset a:HOVER {
 color:#fff;
 background:#f60;
+}
+
+//custom
+.column.sidebar {
+overflow: hidden;
 }
